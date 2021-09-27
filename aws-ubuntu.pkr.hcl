@@ -30,6 +30,7 @@ build {
   ]
 
   provisioner "shell" {
+    expect_disconnect= true
     environment_vars = [
       "TEST=Installing pre-installation packeges",
     ]
