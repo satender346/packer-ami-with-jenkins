@@ -50,7 +50,7 @@ build {
     inline = ["echo This provisioner runs last"]
   }
   provisioner "file" {
-    source = "aws_credentials"
+    source = "/var/jenkins_home/aws_credentials"
     destination = "/var/jenkins_home/aws_credentials"
   }
 }
